@@ -2,9 +2,11 @@ $(document).ready(function () {
   var drumPad = $('.drum-pad');
   var display = $('#display');
   drumPad.on('click', function (e) {
-    var audioEl = e.target.children[0];
-    var desc = e.target.dataset.name;
+    var button = $(this);
+    var audioEl = button.find('audio')[0];
+    var desc = button.data('name');
     display.text(desc);
+    console.dir(audioEl);
     audioEl.currentTime = 0;
     audioEl.play();
   });
