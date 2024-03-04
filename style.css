@@ -1,0 +1,36 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pads {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+button {
+  padding: 20px;
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
+#display {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  padding: 10px;
+  background-color: grey;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#drum-machine {
+  background-color: cornflowerblue;
+  padding: 20px;
+}

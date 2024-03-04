@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Freecodecamp Drum Machine</title>
+  </head>
+  <body>
+    <div id="drum-machine">
+      <div id="display"></div>
+      <div class="pads">
+        <button class="drum-pad" id="heater1" data-name="Heater 1">
+          Q
+          <audio src="./audio/Heater-1.mp3" class="clip" id="Q"></audio>
+        </button>
+        <button class="drum-pad" id="heater2" data-name="Heater 2">
+          W
+          <audio src="./audio/Heater-2.mp3" class="clip" id="W"></audio>
+        </button>
+        <button class="drum-pad" id="heater3" data-name="Heater 3">
+          E
+          <audio src="./audio/Heater-3.mp3" class="clip" id="E"></audio>
+        </button>
+        <button class="drum-pad" id="heater4" data-name="Heater 4">
+          A
+          <audio src="./audio/Heater-4.mp3" class="clip" id="A"></audio>
+        </button>
+        <button class="drum-pad" id="clap" data-name="Clap">
+          S
+          <audio src="./audio/clap.mp3" class="clip" id="S"></audio>
+        </button>
+        <button class="drum-pad" id="open-hh" data-name="Open HH">
+          D
+          <audio src="./audio/open-hh.mp3" class="clip" id="D"></audio>
+        </button>
+        <button class="drum-pad" id="kick-n-hat">
+          Z
+          <audio
+            src="./audio/kick-n-hat.mp3"
+            class="clip"
+            id="Z"
+            data-name="Kick n' Hat"
+          ></audio>
+        </button>
+        <button class="drum-pad" id="kick" data-name="Kick">
+          X
+          <audio src="./audio/kick.mp3" class="clip" id="X"></audio>
+        </button>
+        <button class="drum-pad" id="closed-hh" data-name="Closed HH">
+          C
+          <audio src="./audio/closed-hh.mp3" class="clip" id="C"></audio>
+        </button>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
